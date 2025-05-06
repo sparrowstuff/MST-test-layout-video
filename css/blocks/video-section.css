@@ -1,0 +1,37 @@
+.video-section {
+	position: relative;
+	background: black;
+	overflow: hidden;
+}
+
+.video-section__text {
+	position: relative;
+	z-index: 2;
+	font-size: clamp(1rem, 10vw, 3rem);
+	font-weight: 700;
+	line-height: 130%;
+	color: white;
+	padding: 2rem;
+}
+
+.video-section__main-text {
+	background-color: black;
+	display: inline;
+	position: relative;
+	z-index: 2;
+}
+
+.video-section__highlight {
+	display: inline-block;
+	width: 200px;
+	height: 2.5rem;
+	margin: 0 0.2rem;
+	background: url('../../gif/video.gif') center center / cover no-repeat;
+	mask-image: linear-gradient(black, black);
+	-webkit-mask-image: linear-gradient(black, black);
+	mask-composite: exclude;
+	-webkit-mask-composite: destination-out;
+	mix-blend-mode: normal;
+	position: relative;
+	z-index: 3;
+}
